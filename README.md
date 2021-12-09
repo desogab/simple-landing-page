@@ -12,7 +12,7 @@
 	+ A base da nossa educação são as crianças.
 
 * Como fortalecer essa base?
-	+ Criando projetos sociais que envolvessem não somente a criança, mas algum responsável direto, algo que fosse feito em conjunto. 
+	+ Criando projetos sociais que envolvam não somente a criança, mas algum responsável direto, algo que fosse feito em conjunto. 
 
 * O que poderia ser feito em conjunto que conseguisse agregar valor tanto a nossa base(as crianças) como os responsáveis dela?
 	+ Talvez aulas de lógica de programação para essas crianças 		durante a semana e um curso básico de utilização de um computador para os *pais/responsáveis* aos finais de semana, cursos de montagem e manutenção, ou algo em que eles também fizessem parte do desenvolvimento dos seus filhos/sobrinhos/irmãos.
