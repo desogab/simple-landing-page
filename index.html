@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <title>
+      KiDveloper - levando acesso a educação para os menores, para que um dia
+      eles sejam maiores e melhores que nos mesmos
+    </title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,10 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <title>
-      KiDveloper - levando acesso a educação para os menores, para que um dia
-      eles sejam maiores e melhores que nos mesmos
-    </title>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -31,39 +37,42 @@
     </header>
     <main>
       <article id="home">
-        <section>
-          <div>
+        <div class="home-container">
+          <section>
             <h3>
               Quer levar educação para crianças em situação de vulnerabilidade
-              através da tecnologia usando um grande poder que nos desenvolvedores
-              temos?
+              através da tecnologia usando um grande poder que nos
+              desenvolvedores temos?
             </h3>
             <span class="button-container">
               <button class="button-positive">Sim, conte-me mais</button>
-              <button class="button-negative">Não, só quero ver o layout</button>
+              <button class="button-negative">
+                Não, só quero ver o layout
+              </button>
             </span>
-          </div>
-          <div>
+          </section>
+          <section>
             <p class="positive-one">
-              Estou falando da nossa capacidade de criar soluções inovadoras e uma
-              grande vontade de resolver problemas. A ideia aqui é criar um
+              Estou falando da nossa capacidade de criar soluções inovadoras e
+              uma grande vontade de resolver problemas. A ideia aqui é criar um
               projeto onde vamos mostrar o poder que a tecnologia tem e se bem
               usada, é capaz de transformar vidas.
             </p>
             <p class="negative-one">Que deselegante...</p>
-          </div>
-        </section>
+          </section>
+        </div>
       </article>
       <article id="about">
-        <section>
-          <div>
+        <div class="about-container">
+          <section>
             <p>
               Eu quero te convidar a levar não só educação, mas esperança de um
               futuro melhor. Vamos criar um plano onde teremos um ambiente que
-              iremos levar a educação tecnologica as crianças, seja na utilização
-              básica dos computadores, aulas de programação, como fazer uma boa
-              pesquisa no google para trabalhos de outras disciplinas e tirar
-              duvidas do tipo: "O feijão é por cima ou por baixo do arroz?".
+              iremos levar a educação tecnologica as crianças, seja na
+              utilização básica dos computadores, aulas de programação, como
+              fazer uma boa pesquisa no google para trabalhos de outras
+              disciplinas e tirar duvidas do tipo: "O feijão é por cima ou por
+              baixo do arroz?".
             </p>
             <p>
               Brincadeiras a parte, conto com você para criarmos um plano onde
@@ -75,13 +84,18 @@
             </p>
             <p>Ta gostando da ideia?</p>
             <span class="button-container">
-              <button class="button-positive" title="Faz sentido, continua">Faz sentido, continua</button>
-              <button class="button-negative" title="Não, ta viajando">Não, ta viajando</button>
+              <button class="button-positive" title="Faz sentido, continua">
+                Faz sentido, continua
+              </button>
+              <button class="button-negative" title="Não, ta viajando">
+                Não, ta viajando
+              </button>
             </span>
-          </div>
-        </section>
+          </section>
+        </div>
       </article>
       <article id="how-to">
+        <div class="how-to-container">
           <section>
             <p>
               A princípio, a ideia é fazer campanhas de doação de hardwares
@@ -108,23 +122,40 @@
               caso tenha ficado confuso, fique a vontade para entrar em
               <a href="#contact" title="contato">contato</a> comigo.
             </p>
-          </section>
-          <section>
             <p>
               Ta certo então, obrigado pela visita e me deixe um feedback,
               gostarei muito de ler e saber o que achou e como poderia ser
               melhor. Obrigado!
             </p>
           </section>
+        </div>
       </article>
       <article id="contact">
-        <section>
-          <a href="mailto:gabrielgoomes.desouza@gmail.com" title="email">Email</a>
-          <a href="https://www.linkedin.com/in/desouza-gabriel/" title="linkedIn">LinkedIn</a>
-        </section>
+        <div class="contact-container">
+          <section>
+            <a href="mailto:gabrielgoomes.desouza@gmail.com" title="email"
+              ><span style="color: #ea4436"
+              ><i class="fab fa-google"></i></span> Email</a
+            >
+            <a
+              href="https://www.linkedin.com/in/desouza-gabriel/"
+              title="linkedIn"
+              ><span style="color: #0073b1"
+                ><i class="fab fa-linkedin"></i
+              ></span>
+              LinkedIn</a
+            >
+            <a href="https://github.com/desogab" title="github"><span style="color: #ffffff"
+              ><i class="fab fa-github"></i></span> GitHub</a>
+          </section>
+        </div>
       </article>
     </main>
-    <footer class="footer">Gabriel de Souza</footer>
+    <footer class="footer">
+      <a href="https://desouzadev.vercel.app/" title="Gabriel de Souza site"
+        >Gabriel de Souza, <span id="date"></span
+      ></a>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

@@ -42,23 +42,7 @@ button {
   border-radius: 0.25rem;
   text-align: center;
 }
-section {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-}
 
-section > div:nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-section > div:nth-child(2) {
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -104,7 +88,27 @@ a {
   background-color: var(--color-rusty-red);
 }
 
-#home > section > div > h3 {
+.home-container,
+.about-container,
+.how-to-container,
+.contact-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 0.5rem;
+}
+
+.home-container > section:nth-child(1) {
+  grid-area: 1 / 1 / 1 / 1;
+}
+.home-container > section:nth-child(2) {
+  justify-content: center;
+  grid-area: 2 / 1 / 2 / 2;
+}
+
+.home-container > section > h3 {
   font-size: 2rem;
   color: #fff;
   margin: 0;
@@ -113,7 +117,8 @@ a {
 .button-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .button-positive {
@@ -150,38 +155,39 @@ a {
   background-color: white;
   border-radius: 4px;
   padding: 1rem;
-  width: 50%;
 }
 
 .negative-one {
   background-color: white;
   border-radius: 4px;
   padding: 1rem;
-  width: 50%;
 }
 
 #about {
   background-color: var(--color-electric-blue);
 }
+.about-container > section {
+  grid-area: 2 / 2 / 3 / 3;
+}
 
-#about > section > div > p {
+.about-container > section > p {
   background-color: white;
   border-radius: 4px;
   padding: 1rem;
-  width: 50%;
-  grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 #how-to {
   background-color: var(--color-pale-silver);
 }
+.how-to-container > section {
+  margin: 0 10rem;
+  grid-area: 1 / 1 / 3 / -1;
+}
 
-#how-to > section > div > p {
+.how-to-container > section > p {
   background-color: white;
   border-radius: 4px;
   padding: 1rem;
-  width: 50%;
 }
 
 #contact {
@@ -189,10 +195,20 @@ a {
   background-color: var(--color-dark-purple-200);
 }
 
-.contact-info {
+.contact-container > section {
+  grid-area: 1/ 1 / 3 / -1;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+}
+
+.contact-container > section > a {
+  transition-duration: 400ms;
+}
+
+.contact-container > section > a:hover {
+  color: var(--color-rusty-red);
+  font-weight: 700;
+  transform: scale(1.2);
 }
 
 .footer {
@@ -201,4 +217,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer > a{
+  justify-content: center;
+  transition-duration: 400ms;
+}
+
+.footer > a:hover {
+  color: var(--color-rusty-red);
+  font-weight: 700;
+  transform: scale(1.2);
 }
