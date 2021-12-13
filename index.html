@@ -8,7 +8,7 @@
       KiDveloper - levando acesso a educação para os menores, para que um dia
       eles sejam maiores e melhores que nos mesmos
     </title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,13 +26,20 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <h2 class="title">KiDveloper</h2>
+        <h2 class="title"><a href="#" class="nav-logo">KiDveloper</a></h2>
         <ul class="nav-list">
-          <li><a href="#home" title="inicio">Início</a></li>
-          <li><a href="#about" title="sobre">Sobre</a></li>
-          <li><a href="#how-to" title="como ajudar">Como Ajudar?</a></li>
-          <li><a href="#contact" title="contato">Contato</a></li>
+          <li class="nav-item"><a href="#home" title="inicio">Início</a></li>
+          <li class="nav-item"><a href="#about" title="sobre">Sobre</a></li>
+          <li class="nav-item">
+            <a href="#how-to" title="como ajudar">Como Ajudar?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" title="contato">Contato</a>
+          </li>
         </ul>
+        <button class="btn-menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
     </header>
     <main>
@@ -50,8 +57,6 @@
                 Não, só quero ver o layout
               </button>
             </span>
-          </section>
-          <section>
             <p class="positive-one">
               Estou falando da nossa capacidade de criar soluções inovadoras e
               uma grande vontade de resolver problemas. A ideia aqui é criar um
@@ -60,6 +65,11 @@
             </p>
             <p class="negative-one">Que deselegante...</p>
           </section>
+          <img
+            src="images/light.webp"
+            alt="uma lâmpada"
+            title="lâmpada da ideia"
+          />
         </div>
       </article>
       <article id="about">
@@ -92,11 +102,17 @@
               </button>
             </span>
           </section>
+          <img
+            src="images/children.webp"
+            alt="criança no laptop"
+            title="uma criança no laptop"
+          />
         </div>
       </article>
       <article id="how-to">
         <div class="how-to-container">
           <section>
+            <h3>Parte 1</h3>
             <p>
               A princípio, a ideia é fazer campanhas de doação de hardwares
               antigos de outros devs a princípio, sabemos que muitas vezes nós
@@ -105,10 +121,16 @@
               acabamos deixando o hardware antigo guardado em algum lugar no
               armário ou em alguma gaveta no nosso escritório.
             </p>
+          </section>
+          <section>
+            <h3>Parte 2</h3>
             <p>
               Nos lançariamos a campanha: "Libere o cache de hardware que você
               tem na sua casa."
             </p>
+          </section>
+          <section>
+            <h3>Parte 3</h3>
             <p>
               Com o suporte da galera de tecnologia envolvida com hardwares em
               conjunto com um time de eletrônica para alguns reparos de placas
@@ -117,11 +139,20 @@
               uma boa distro linux, esses computadores podem voltar a vida e
               ajudar muitas vidas.
             </p>
+          </section>
+          <section>
+            <h3>FIM</h3>
             <p>
               Espero que eu tenha conseguido passar a mensagem do projeto, mas
               caso tenha ficado confuso, fique a vontade para entrar em
-              <a href="#contact" title="contato">contato</a> comigo.
+              <a href="#contact" title="contato"
+                ><em style="color: #0073b1">contato</em></a
+              >
+              comigo.
             </p>
+          </section>
+          <section>
+            <h3>Fim</h3>
             <p>
               Ta certo então, obrigado pela visita e me deixe um feedback,
               gostarei muito de ler e saber o que achou e como poderia ser
@@ -131,24 +162,22 @@
         </div>
       </article>
       <article id="contact">
-        <div class="contact-container">
-          <section>
-            <a href="mailto:gabrielgoomes.desouza@gmail.com" title="email"
-              ><span style="color: #ea4436"
-              ><i class="fab fa-google"></i></span> Email</a
-            >
-            <a
-              href="https://www.linkedin.com/in/desouza-gabriel/"
-              title="linkedIn"
-              ><span style="color: #0073b1"
-                ><i class="fab fa-linkedin"></i
-              ></span>
-              LinkedIn</a
-            >
-            <a href="https://github.com/desogab" title="github"><span style="color: #ffffff"
-              ><i class="fab fa-github"></i></span> GitHub</a>
-          </section>
-        </div>
+        <section class="contact-container">
+          <a href="mailto:gabrielgoomes.desouza@gmail.com" title="email"
+            ><span style="color: #ea4436"><i class="fab fa-google"></i></span>
+            Email</a
+          >
+          <a
+            href="https://www.linkedin.com/in/desouza-gabriel/"
+            title="linkedIn"
+            ><span style="color: #0073b1"><i class="fab fa-linkedin"></i></span>
+            LinkedIn</a
+          >
+          <a href="https://github.com/desogab" title="github"
+            ><span style="color: #ffffff"><i class="fab fa-github"></i></span>
+            GitHub</a
+          >
+        </section>
       </article>
     </main>
     <footer class="footer">
@@ -156,6 +185,6 @@
         >Gabriel de Souza, <span id="date"></span
       ></a>
     </footer>
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
