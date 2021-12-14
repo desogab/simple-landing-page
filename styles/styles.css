@@ -50,6 +50,10 @@ a {
 
 /*My Style CSS*/
 
+.hide-element{
+  display: none;
+}
+
 .header {
   background-color: var(--color-dark-purple-200);
   position: fixed;
@@ -134,7 +138,7 @@ a {
   gap: 1rem;
 }
 
-.button-positive {
+.button-positive-one, .button-positive-two {
   background-color: #fff;
   font-weight: 700;
   padding: 0.5rem;
@@ -144,13 +148,13 @@ a {
   width: 100%;
 }
 
-.button-positive:hover {
+.button-positive-one:hover, .button-positive-two:hover {
   color: #fff;
   background-color: #7ff76f;
   transform: scale(1.1);
 }
 
-.button-negative {
+.button-negative-one, .button-negative-two {
   background-color: #fff;
   font-weight: 700;
   padding: 0.5rem;
@@ -160,7 +164,7 @@ a {
   width: 100%;
 }
 
-.button-negative:hover {
+.button-negative-one:hover, .button-negative-two:hover {
   color: #fff;
   background-color: #000000;
   transform: scale(1.1);
