@@ -50,7 +50,7 @@ a {
 
 /*My Style CSS*/
 
-.hide-element{
+.hide-element {
   display: none;
 }
 
@@ -138,36 +138,36 @@ a {
   gap: 1rem;
 }
 
-.button-positive-one, .button-positive-two {
+.button-positive-one,
+.button-positive-two {
   background-color: #fff;
   font-weight: 700;
   padding: 0.5rem;
   text-transform: uppercase;
   border: 1px solid black;
-  transition-duration: 400ms;
   width: 100%;
 }
 
-.button-positive-one:hover, .button-positive-two:hover {
+.button-positive-one:hover,
+.button-positive-two:hover {
   color: #fff;
   background-color: #7ff76f;
-  transform: scale(1.1);
 }
 
-.button-negative-one, .button-negative-two {
+.button-negative-one,
+.button-negative-two {
   background-color: #fff;
   font-weight: 700;
   padding: 0.5rem;
   text-transform: uppercase;
   border: 1px solid black;
-  transition-duration: 400ms;
   width: 100%;
 }
 
-.button-negative-one:hover, .button-negative-two:hover {
+.button-negative-one:hover,
+.button-negative-two:hover {
   color: #fff;
   background-color: #000000;
-  transform: scale(1.1);
 }
 
 .positive-one {
@@ -268,6 +268,34 @@ a {
   transform: scale(1.2);
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+#btn-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  font-size: 20px;
+  border: #fff;
+  background-color: #fff;
+  color: var(--color-rusty-red);
+  cursor: pointer;
+  padding: 8px;
+}
+
+#btn-to-top:hover {
+  background-color: #fff;
+  filter: brightness(95%);
+}
+
 /*iPads, Tablets*/
 @media screen and (max-width: 768px) {
   .button-container {
@@ -294,7 +322,7 @@ a {
   .btn-menu {
     display: flex;
     background-color: #fff;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     font-size: 1.5rem;
     color: var(--color-dark-purple-200);
   }
