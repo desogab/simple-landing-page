@@ -47,7 +47,7 @@ function hideElement(element) {
 }
 
 function disableButton(element) {
-  element.disable = true;
+  element.disabled = true;
   element.style.cssText = 'pointer-events: none;';
 }
 
@@ -57,8 +57,8 @@ function disableButton(element) {
 const aboutSection = document.querySelector('.about-container');
 
 btnPositiveOne.addEventListener('click', function () {
-  disableButton(btnNegativeOne);
   showElement(positiveOne);
+  disableButton(btnNegativeOne);
   aboutSection.children[0].classList.remove('hide-element');
 });
 //resposta negativa da primeira pergunta
