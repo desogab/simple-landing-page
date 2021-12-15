@@ -32,4 +32,4 @@ A captação de computadores poderia ser feita através de doações de devs do 
 
 * *KiDvelopers* - a idéia veio de KID e Developers.
 * "Levando acesso a educação para os menores, para que um dia eles sejam maiores e melhores que nos mesmos."
-* "Libere o cache de hardware que você tem na sua casa."
+* "Tirando o hardware velho da gaveta."
